@@ -1,0 +1,24 @@
+{
+  "name": "transcluder",
+  "version": "1.0.0",
+  "description": "Another Angular directive to help with multiple transclusion within a single directive.",
+  "repository": "https://github.com/bvaughn/transcluder",
+  "author": {
+    "name": "Brian Vaughn",
+    "email": "brian.david.vaughn@gmail.com",
+    "url": "http://www.briandavidvaughn.com"
+  },
+  "keywords": [
+    "angular",
+    "transclude",
+    "transclusion",
+    "multi",
+    "multiple",
+    "directives",
+    "templates",
+    "include"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+  }
+}
