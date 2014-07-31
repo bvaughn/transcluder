@@ -28,24 +28,24 @@ The transcluder directive enables more powerful and better organized directive t
 Consider the following 'foobar' directive template and its use of the transcluder:
 ```html
 <div transcluder class="foobar">
-  <div class="styled-header" transclude-header></div>
+  <div class="styled-header" transclude-header></div> <!-- attribute notation supported -->
   <hr/>
-  <transclude-content></transclude-content>
+  <transclude-content></transclude-content> <!-- element notation also supported -->
 </div>
 ```
 
 Assume that another component were to use the 'foobar' directive as follows:
 ```html
 <foobar>
-  <h1 transclude="foote-header">Foobar</h1>
-  <p transclude="foote-content">Lorem ipsum.</p>
+  <h1 transclude="header">Foobar</h1>
+  <p transclude="content">Lorem ipsum.</p>
 </foobar>
 ```
 
 The transcluder would automatically convert the above into the following:
 ```html
 <div transcluder class="foobar">
-  <h1 class="styled-header">Foobar</h1>
+  <h1 class="styled-header">Foobar</h1> <!-- directive template class names preserved -->
   <hr/>
   <p>Lorem ipsum.</p>
 </div>
